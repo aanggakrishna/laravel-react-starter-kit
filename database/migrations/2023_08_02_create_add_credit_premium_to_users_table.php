@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('credits')->default(0)->after('avatar');
+            $table->integer('credits')->default(0);
             $table->boolean('is_premium')->default(false)->after('credits');
             $table->timestamp('premium_expires_at')->nullable()->after('is_premium');
         });
