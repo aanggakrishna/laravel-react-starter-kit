@@ -1,2 +1,25 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /dashboard
+Disallow: /settings
+Disallow: /posts
+Disallow: /categories
+Disallow: /tags
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /verify-email
+Disallow: /confirm-password
+
+# Disallow admin routes
+Disallow: /admin/
+
+# Allow important assets
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /storage/
+
+# Sitemap location
+Sitemap: https://bikinsoal.com/sitemap.xml

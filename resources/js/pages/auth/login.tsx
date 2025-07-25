@@ -94,6 +94,25 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                         {processing && <LoaderCircle className="h-4 w-4 animate-spin" />}
                         Log in
                     </Button>
+                    
+                    <div className="relative">
+                        <div className="absolute inset-0 flex items-center">
+                            <span className="w-full border-t" />
+                        </div>
+                        <div className="relative flex justify-center text-xs uppercase">
+                            <span className="bg-background px-2 text-muted-foreground">Or continue with</span>
+                        </div>
+                    </div>
+                    
+                    <a href={route('auth.google')} className="w-full">
+                        <Button type="button" variant="outline" className="w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 12 L16 12 M12 8 L12 16"></path>
+                            </svg>
+                            Google
+                        </Button>
+                    </a>
                 </div>
 
                 <div className="text-center text-sm text-muted-foreground">
