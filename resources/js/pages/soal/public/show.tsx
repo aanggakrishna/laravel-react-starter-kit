@@ -6,7 +6,6 @@ import { Badge } from '@/components/ui/badge';
 import { format } from 'date-fns';
 import { ArrowLeft, Eye, User, Calendar, Download, Play, Share2, Trophy, Users, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
-import { toast } from '@/components/ui/use-toast';
 
 interface PromptDetail {
   id: number;
