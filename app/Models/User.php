@@ -128,6 +128,14 @@ class User extends Authenticatable
     }
 
     /**
+     * Get the pages for the user.
+     */
+    public function pages(): HasMany
+    {
+        return $this->hasMany(Page::class);
+    }
+
+    /**
      * The roles that belong to the user.
      */
     public function roles(): BelongsToMany
